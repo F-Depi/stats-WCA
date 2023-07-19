@@ -1,0 +1,5 @@
+SELECT personId as 'WCA ID', personName as Persona, MIN(average) as Average
+FROM Results r
+WHERE r.countryId = 'Italy' AND r.average > 0 AND r.eventId = '333'
+GROUP BY r.personId
+ORDER BY 3 ASC

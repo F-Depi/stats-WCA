@@ -3,3 +3,5 @@ They can easily be prompted at https://statistics.worldcubeassociation.org/datab
 
 Grazie Santa
 SELECT * FROM INFORMATION_SCHEMA.COLUMNS 
+
+SELECT * FROM YourTableName LIMIT 5;

@@ -1,5 +1,5 @@
 SELECT personId, personName, MIN(best) as Single
 FROM Results r, Competitions c
-WHERE r.competitionId = c.id AND c.year = 2023 AND r.best > 0 AND r.eventId = '333bf'
+WHERE r.competitionId = c.id AND RIGHT(c.competitionId, 4) = '2023' AND r.best > 0 AND r.eventId = '333bf'
 GROUP BY r.personId
 ORDER BY 3 ASC

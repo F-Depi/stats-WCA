@@ -1,0 +1,6 @@
+SELECT personId as 'WCA ID', personName as Persona, ROUND(MIN(best)/100.0, 2) as Singolo
+FROM Results r
+JOIN Countries c ON r.countryId = c.countryId
+WHERE c.continentId = '_Europe' AND r.best > 0 AND r.eventId = '333bf' AND RIGHT(competitionId, 4) = '2023' 
+GROUP BY r.personId
+ORDER BY 3 ASC;

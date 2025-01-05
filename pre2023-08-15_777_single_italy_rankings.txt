@@ -1,0 +1,9 @@
+SELECT personId, personName, MIN(best) as Single
+FROM Results r, Competitions c
+WHERE r.competitionId = c.id
+AND r.countryId = 'Italy'
+AND c.end_date <= '2023-08-15'
+AND r.best > 0
+AND r.eventId = '777'
+GROUP BY r.personId
+ORDER BY 3 ASC

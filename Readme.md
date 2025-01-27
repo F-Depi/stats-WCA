@@ -9,7 +9,7 @@ FROM INFORMATION_SCHEMA.TABLES i
 WHERE i.TABLE_ROWS != 0
 ```
 
-To look at all the column of a specific table you can print the first 5 rows with
+To look at all the columns of a specific table you can print the first 5 rows with
 
 ```
 SELECT *

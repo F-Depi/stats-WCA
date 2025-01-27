@@ -1,7 +1,7 @@
-This repo is a collection of all the queries "I did"
+This repo is a collection of really simple queries that are useful as a first approach to WCA statistics. 
 They can easily be prompted at https://statistics.worldcubeassociation.org/database-query logging in with a WCA Account
 
-To list the tables one can access
+This lists all the tables accessible on the database
 
 ```
 SELECT * 
@@ -9,11 +9,10 @@ FROM INFORMATION_SCHEMA.TABLES i
 WHERE i.TABLE_ROWS != 0
 ```
 
-The first rows of the table ("YourTabName") can be visualized with
+To look at all the column of a specific table you can print the first 5 rows with
 
 ```
 SELECT *
 FROM "YourTableName"
 LIMIT 5;
 ```
-Using ```LIMIT``` is highly recommended, as some tables are very large and may cause the website to freeze for an extended period.
